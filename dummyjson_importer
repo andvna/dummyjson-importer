@@ -1,0 +1,162 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.8
+-- Dumped by pg_dump version 16.8
+
+-- Started on 2025-04-13 21:44:11
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 4858 (class 0 OID 16424)
+-- Dependencies: 221
+-- Data for Name: failed_jobs; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4853 (class 0 OID 16400)
+-- Dependencies: 216
+-- Data for Name: migrations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.migrations VALUES (1, '2014_10_12_000000_create_users_table', 1);
+INSERT INTO public.migrations VALUES (2, '2014_10_12_100000_create_password_resets_table', 1);
+INSERT INTO public.migrations VALUES (3, '2019_08_19_000000_create_failed_jobs_table', 1);
+INSERT INTO public.migrations VALUES (4, '2019_12_14_000001_create_personal_access_tokens_table', 1);
+INSERT INTO public.migrations VALUES (5, '2025_04_13_153533_create_products_table', 2);
+INSERT INTO public.migrations VALUES (6, '2025_04_13_161634_create_recipes_table', 3);
+INSERT INTO public.migrations VALUES (7, '2025_04_13_161858_create_posts_table', 4);
+INSERT INTO public.migrations VALUES (8, '2025_04_13_164504_change_reactions_column_type_in_posts_table', 5);
+INSERT INTO public.migrations VALUES (10, '2025_04_13_165031_add_dummyjson_fields_to_users_table', 6);
+
+
+--
+-- TOC entry 4856 (class 0 OID 16417)
+-- Dependencies: 219
+-- Data for Name: password_resets; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4860 (class 0 OID 16436)
+-- Dependencies: 223
+-- Data for Name: personal_access_tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4866 (class 0 OID 16470)
+-- Dependencies: 229
+-- Data for Name: posts; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4862 (class 0 OID 16448)
+-- Dependencies: 225
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4864 (class 0 OID 16459)
+-- Dependencies: 227
+-- Data for Name: recipes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4855 (class 0 OID 16407)
+-- Dependencies: 218
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 4879 (class 0 OID 0)
+-- Dependencies: 220
+-- Name: failed_jobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.failed_jobs_id_seq', 1, false);
+
+
+--
+-- TOC entry 4880 (class 0 OID 0)
+-- Dependencies: 215
+-- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.migrations_id_seq', 10, true);
+
+
+--
+-- TOC entry 4881 (class 0 OID 0)
+-- Dependencies: 222
+-- Name: personal_access_tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.personal_access_tokens_id_seq', 1, false);
+
+
+--
+-- TOC entry 4882 (class 0 OID 0)
+-- Dependencies: 228
+-- Name: posts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.posts_id_seq', 502, true);
+
+
+--
+-- TOC entry 4883 (class 0 OID 0)
+-- Dependencies: 224
+-- Name: products_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.products_id_seq', 582, true);
+
+
+--
+-- TOC entry 4884 (class 0 OID 0)
+-- Dependencies: 226
+-- Name: recipes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.recipes_id_seq', 100, true);
+
+
+--
+-- TOC entry 4885 (class 0 OID 0)
+-- Dependencies: 217
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.users_id_seq', 416, true);
+
+
+-- Completed on 2025-04-13 21:44:11
+
+--
+-- PostgreSQL database dump complete
+--
+
